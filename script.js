@@ -489,7 +489,7 @@ function createTipElement(tip) {
     
     tipDiv.innerHTML = `
         <div class="tip-header" onclick="toggleTip(this)">
-            <span class="tip-title">Tip #${tip.id}: ${tip.title}</span>
+            <span class="tip-title">Tip ${tip.id}: ${tip.title}</span>
             <span class="tip-toggle">▼</span>
         </div>
         <div class="tip-content">
