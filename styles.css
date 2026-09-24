@@ -28,7 +28,7 @@ body {
 }
 
 .container {
-    max-width: 1200px;
+    max-width: 1400px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -208,9 +208,10 @@ body {
 }
 
 .logo h1 {
+    font-family:'monotype corsiva',serif; 
     color: var(--text-light);
-    font-size: 1.5rem;
-    font-weight: 600;
+    font-size: 2rem;
+    font-weight: 700;
 }
 
 .nav {
@@ -219,6 +220,7 @@ body {
 }
 
 .nav-link {
+    font-family:'PSFournier Try Light',serif;
     color: var(--text-light);
     text-decoration: none;
     font-weight: 500;
@@ -243,6 +245,8 @@ body {
 }
 
 .nav-link:hover {
+    font-family:'monotype corsiva',serif;
+    font-weight:800;
     color: var(--secondary-color);
 }
 
@@ -379,7 +383,7 @@ body {
     transform: translateX(-50%);
     text-align: center;
     z-index: 3;
-    animation: bounceIndicator 2s ease-in-out infinite;
+    animation: bounceIndicator 3s ease-in-out infinite;
 }
 
 @keyframes bounceIndicator {
@@ -387,7 +391,7 @@ body {
         transform: translateX(-50%) translateY(0);
     }
     50% {
-        transform: translateX(-50%) translateY(-10px);
+        transform: translateX(-50%) translateY(-5px);
     }
 }
 
@@ -424,10 +428,10 @@ body {
 }
 
 .scroll-indicator p {
+    font-family: 'monotype corsiva';
     color: rgba(255, 255, 255, 0.6);
-    font-size: 0.85rem;
+    font-size: 1.2rem;
     margin: 0;
-    text-transform: uppercase;
     letter-spacing: 1.5px;
     font-weight: 500;
 }
@@ -508,6 +512,16 @@ body {
 }
 
 .title-line {
+    font-family:'PSFournier Try Light',serif;
+    display: block;
+    transform-style: preserve-3d;
+}
+
+.title-line1 {
+    font-family:'monotype corsiva',serif;
+    color: #f5f5ee;
+    font-weight: 500;
+    font-size: 4rem;
     display: block;
     transform-style: preserve-3d;
 }
@@ -532,7 +546,7 @@ body {
 
 .hero-subtitle {
     font-size: 1.3rem;
-    font-family:'Times New Roman', Times, serif;
+    font-family:'PSFournier Try Grand Light Italic';
     color: rgba(255, 255, 255, 0.85);
     margin-bottom: 2rem;
     line-height: 1.6;
@@ -578,11 +592,11 @@ body {
 }
 
 .stat-label {
-    font-size: 0.9rem;
+    font-family: 'monotype corsiva';
+    font-size: 1.4rem;
     color: rgba(255, 255, 255, 0.7);
-    text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 600;
+
 }
 
 .hero-buttons {
@@ -611,6 +625,8 @@ body {
 }
 
 .btn-content {
+    font-family: 'Cambria',serif;
+    font-size: 1.15rem;
     display: flex;
     align-items: center;
     gap: 0.6rem;
@@ -840,7 +856,7 @@ body {
 
 /* Intro Section */
 .intro {
-    background: #f8f9fa;
+    background: #f5f5ee;
     padding: 80px 20px;
     position: relative;
     z-index: 10;
@@ -852,6 +868,11 @@ body {
     text-align: center;
 }
 
+.intro-content .base {
+    font-family:'monotype corsiva';
+    font-weight: 600;
+    font-size:1.6rem;
+}
 .intro-content h2 {
     font-size: 2.5rem;
     font-family: 'Playfair Display',serif;
@@ -874,11 +895,11 @@ body {
 }
 
 .white-section {
-    background: linear-gradient(135deg, #f8f9fa 0%, #dce4ec 100%);
+    background:linear-gradient(#f5f5ee 0%,#f5f5ee 100%);
 }
 
 .black-section {
-    background: linear-gradient(135deg, #0a0a0a 0%, #1a2332 100%);
+    background: linear-gradient(#131924 0%, #1a2332 100%);
 }
 
 .black-section * {
@@ -1023,7 +1044,7 @@ body {
 
 /* Puzzles Section */
 .puzzles-section {
-    background: linear-gradient(135deg, #1a2d45 0%, #2c4a6e 100%);
+    background: linear-gradient( #1a2332 0%, #2c4a6e 100%);
     padding: 80px 20px;
     color: var(--text-light);
 }
@@ -1360,7 +1381,7 @@ body {
 }
 
 .about-content h2 {
-    font-family: 'Playfair Display',serif;
+    font-family: 'PSfournier Try Light',serif;
     font-size: 2.5rem;
     margin-bottom: 1.5rem;
     color: #5ba3d0;
@@ -1368,6 +1389,8 @@ body {
 }
 
 .about-content p {
+    text-align:justify;
+    font-family: 'Times New Roman', Times, serif;
     font-size: 1.2rem;
     line-height: 1.8;
     margin-bottom: 1.5rem;
